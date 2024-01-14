@@ -3,7 +3,7 @@ import { onMounted } from "vue";
 import FrontendLayout from "@/Layouts/FrontendLayout.vue";
 import { Head, Link } from "@inertiajs/vue3";
 onMounted(() => {
-
+console.log('test')
 });
 </script>
 <template>

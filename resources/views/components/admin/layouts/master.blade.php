@@ -11,7 +11,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui">
     <title>{{ config('settings.site_title', 'My Fitness Booking') }}</title>
 
-    <link rel="shortcut icon" href="{{ asset(config('settings.favicon', 'assets/admin/images/favicon.ico')) }}">
+    {{-- <link rel="shortcut icon" href="{{ asset(config('settings.favicon', 'assets/admin/images/favicon.ico')) }}"> --}}
 
     <x-admin.includes.styles>
         <x-slot name="topStyle">
