@@ -8,7 +8,6 @@ onMounted(() => {
 </script>
 <template>
     <Head title="Home Page" />
-
     <FrontendLayout>
         <template #main>
                 <h4>Home Page</h4>
