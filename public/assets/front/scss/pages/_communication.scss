@@ -1,0 +1,40 @@
+.ic-account-wrapper {
+  .account-right_sec {
+    .email-subscription-wrap {
+      margin-top: 24px;
+      h1 {
+        font-weight: 500;
+      }
+      .check-box {
+        margin-top: 27px;
+        .form-check {
+          font-family: $font-lato;
+          margin-bottom: 18px;
+          display: flex;
+          .form-check-input {
+            min-width: 56px;
+            height: 28px;
+            cursor: pointer;
+            @media #{$max1199} {
+              min-width: 35px;
+              height: 18px;
+            }
+            &:focus {
+              box-shadow: none;
+            }
+          }
+          .check-content {
+            margin-left: 16px;
+            color: $color-ebony-clay;
+            label {
+              letter-spacing: 0.16px;
+            }
+            p {
+              margin-top: 1px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

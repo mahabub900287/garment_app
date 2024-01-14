@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap');
+
+
+$font-montserrat: 'Montserrat',
+    sans-serif;
+
+$font-lato: "Lato",
+    sans-serif;
+
+//Color
+
+$color-white: #fff;
+$color-primary: #00AEB6;
+$color-shuttle-gray: #5c6268;
+$color-ebony-clay: #242b33;
+$color-black: #252522;
+$color-blue: #001F3F;
+$color-body: #555555;
+$color-border5: #EAECF0;
+$color-border4: #EAEFF3;
+$color-border3: #F0F0F0;
+$color-border2: #D0D5DD80;
+$color-border: #E9ECEE;
+$color-gray3: #333F48;
+$color-gray: #282B38;
+$color-gray2: #F5F5F5;
+$color-gray500: #667085;
+$color-gray4: #FCFCFD;
+$color-gray50: #667085;
+$color-icon: #667085;
+$color-purple: #760FDD;
+$color-title: #242B33;
+$gradient: linear-gradient(180deg, #00AEB6 0%, #89439C 100%);
+$gradient2: linear-gradient(138deg, #FFEBC4 0%, #FEC855 100%);
+$shadow: 0px 4px 16px 0px rgba(0, 0, 0, 0.06);
+$bg-black: #1E1E1E;
+$bg-blue: #253D7A;
+$bg-yellow: #FFB33F;
+$bg-red: #800033;
+$bg-green: #95C23D;
+$bg-red2: #E60012;
+
+.color-primary {
+    color: $color-primary;
+}
+
+.color-white {
+    color: $color-white;
+}
+
+.color-title {
+    color: $color-title;
+}
+
+.color-gray2 {
+    color: $color-gray2;
+}
+
+//Media Query
+
+$max1920: "only screen and (max-width: 1920px)";
+// $max1850: "only screen and (max-width: 1850px)"; 
+$max1800: "only screen and (max-width: 1800px)";
+// $max1760: "only screen and (max-width: 1760px)";
+$max1650: "only screen and (max-width: 1650px)";
+$max1440: "only screen and (max-width: 1440px)";
+$max1399: "only screen and (max-width: 1399.98px)";
+$max1366: "only screen and (max-width: 1366px)";
+$max1280: "only screen and (max-width: 1280px)";
+$max1199: "only screen and (max-width: 1199.98px)";
+$max991: "only screen and (max-width: 991.98px)";
+$max767: "only screen and (max-width: 767.98px)";
+$max575: "only screen and (max-width: 575.98px)";
+$max480: "only screen and (max-width: 480px)";
+$max374: "only screen and (max-width: 374.98px)";

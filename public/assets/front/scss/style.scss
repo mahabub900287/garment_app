@@ -1,0 +1,51 @@
+// Abstract Styles    
+
+@import './abstracts/mixins';
+@import './abstracts/variable';
+
+//Base Styles
+
+@import './base/global';
+@import './base/reset';
+@import './base/typhography';
+
+//Component
+
+@import './component/breadcumb';
+@import './component/button';
+@import './component/forms';
+@import './component/according';
+@import './component/select';
+@import './component/card-items';
+
+//Layout
+
+@import './layout/banner';
+@import './layout/footer';
+@import './layout/header';
+
+//Pages Styles
+
+@import './pages/home';
+@import './pages/auth';
+@import './pages/my-account';
+@import './pages/rewards';
+@import './pages/communication';
+@import './pages/top-deals';
+@import './pages/categories';
+@import './pages/cash-back';
+@import './pages/blog';
+@import './pages/blog-details';
+@import './pages/about-us';
+@import './pages/contact-us';
+@import './pages/single-coupon';
+@import './pages/community';
+@import './pages/coupon-grid';
+@import './pages/coupon-list';
+@import './pages/coupon-checkout';
+@import './pages/coupon';
+@import './pages/submit-coupon';
+@import './pages/user-submitted-coupons';
+@import './pages/help';
+@import './pages/price-comparison';
+@import './pages/product-price';

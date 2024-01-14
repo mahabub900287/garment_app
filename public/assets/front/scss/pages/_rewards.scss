@@ -1,0 +1,365 @@
+// reward pricing wrap
+.reward-pricing-wrap {
+  margin-top: 30px;
+  @include d-flex();
+  justify-content: space-between;
+  width: 100%;
+  align-items: center;
+  text-align: center;
+  background: $color-white;
+  color: $color-title;
+  @include bd-radius(6px);
+  box-shadow: 0px 4px 16px 0px rgba(55, 62, 96, 0.06);
+  @media #{$max1199} {
+    display: block;
+  }
+  .left-content {
+    padding: 24px 30px;
+    width: 450px;
+    @media #{$max1399} {
+      padding: 24px;
+      width:420px;
+    }
+    @media #{$max991} {
+      padding: 24px;
+      width: auto;
+    }
+    h1 {
+      letter-spacing: 0.24px;
+      text-align: left;
+      margin-bottom: 20px;
+    }
+    .price-info {
+    
+      // @media #{$max1399} {
+      //   gap: 20px;
+      // }
+      // @media #{$max767} {
+      //   flex-wrap: nowrap;
+      //   text-align: left;
+      // }
+      // .price-equal {
+      //   @media #{$max575} {
+      //     display: none;
+      //   }
+      // }
+      .item {
+        @include d-flex;
+        gap: 60px;
+        align-items: center;
+        @media #{$max991} {
+          gap: 25px;
+        }
+        h2 {
+          display: flex;
+          align-items: center;
+          font-size: 40px;
+          font-family: $font-lato;
+          font-weight: 700;
+          line-height: 60px;
+          letter-spacing: 0.4px;
+          color: $color-primary;
+          @media #{$max1399} {
+            font-size: 30px;
+            line-height: 45px;
+          }
+          @media #{$max1199} {
+            font-size: 20px;
+            line-height: 45px;
+          }
+          .icon {
+            margin-left: 7px;
+            @media #{$max1199} {
+              svg{
+                width: 24px;
+              }
+            }
+          }
+        }
+        h4 {
+          line-height: 24px;
+          letter-spacing: 0.16px;
+          width: 160px;
+          text-align: left;
+          @media #{$max991} {
+            font-size: 15px;
+            width: 150px;
+          }
+        }
+      }
+    }
+  }
+  .right-content {
+    border-radius: 0px 6px 6px 0px;
+    background: linear-gradient(138deg, #ffebc4 0%, #fec855 100%);
+    box-shadow: 0px 32px 28px 0px rgba(55, 62, 96, 0.02);
+    height: 210px;
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+    @media #{$max1199} {
+      height: 150px;
+    }
+    .total-price {
+      .shape {
+        position: absolute;
+        right: -112px;
+        top: -10px;
+        background: url(../images/price-shape.png);
+        background-repeat: no-repeat;
+        width: 160px;
+        height: 160px;
+      }
+      h1 {
+        font-size: 48px;
+        font-family: $font-lato;
+        font-weight: 700;
+        line-height: 72px;
+        letter-spacing: 0.48px;
+        color: $color-primary;
+        @media #{$max1399} {
+          font-size: 35px;
+          line-height: 45px;
+        }
+        @media #{$max1199} {
+          font-size: 30px;
+          line-height: 40px;
+        }
+      }
+      h2 {
+        @media #{$max1399} {
+          font-size: 18px;
+        }
+        @media #{$max1199} {
+          font-size: 16px;
+        }
+      }
+    }
+    .right-shape{
+      position: absolute;
+      left: 0;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+  }
+}
+// reward activity progress
+.reward-activity-progress {
+  font-family: $font-lato;
+  @include bd-radius(6px);
+  border: 1px solid $color-border4;
+  margin: 30px 0;
+  background: $color-white;
+  padding: 24px 30px 30px;
+  box-shadow: 0px 32px 28px 0px rgba(55, 62, 96, 0.02);
+  @media #{$max1199} {
+    padding: 24px;
+  }
+  // reward activity
+  .reward-activity {
+    margin-bottom: 30px;
+    p {
+      letter-spacing: 0.16px;
+      font-weight: 600;
+      span {
+        color: $color-ebony-clay;
+      }
+      a {
+        color: $color-primary;
+        font-weight: 800;
+      }
+    }
+    h1 {
+      letter-spacing: 0.24px;
+      font-family: $font-montserrat;
+      margin-bottom: 20px;
+      margin-top: 14px;
+    }
+    .merchent-info {
+      background: #ebf0f5;
+      padding: 36px 53px;
+      text-align: center;
+      @media #{$max1199} {
+        padding: 25px 20px;
+      }
+      @include bd-radius(6px);
+      h3 {
+        font-style: italic;
+        font-weight: 500;
+        line-height: 160%;
+        letter-spacing: 0.18px;
+        color: $color-primary;
+      }
+    }
+  }
+  // reward progress
+  .reward-progress {
+    margin-top: 30px;
+    table {
+      border: 1px solid #ebe7e7;
+      @include bd-radius(6px);
+      background: $color-white;
+      color: #242b33;
+      margin-top: 28px;
+      th,
+      td {
+        padding: 12px 14px;
+        border: 1px solid #ebe7e7;
+        background: #ebf0f5;
+        @media #{$max991} {
+          font-size: 14px;
+        }
+      }
+      td {
+        padding: 24px 14px;
+        background: transparent;
+        &.merchant {
+          padding: 16px 14px;
+          .icon {
+            width: 34px;
+            height: 34px;
+            text-align: center;
+            background: #1e1e1e;
+            @include bd-radius(100px);
+            @include d-flex;
+            justify-content: center;
+            align-items: center;
+            &.rd-color {
+              background: #cc2025;
+            }
+          }
+
+          p {
+            color: #000;
+          }
+        }
+        &.edit {
+          text-align: center;
+          padding: 16px 24px;
+          .icon-info {
+            @include bd-radius(6px);
+            @include align-center;
+            padding: 10px;
+            border: 1px solid #e1e1e1;
+          }
+        }
+      }
+    }
+  }
+}
+
+// earn-reward
+.earn-reward {
+  @extend .reward-activity-progress;
+  @include align-center;
+  margin: 0;
+  padding: 0;
+  @media #{$max1199} {
+    display: block;
+  }
+  .left-content {
+    padding: 15px 40px 15px 30px;
+    @media #{$max1199} {
+      padding: 15px 24px 15px 24px;
+    }
+    h1 {
+      font-family: $font-montserrat;
+    }
+    h3 {
+      margin: 6px 0 8px;
+      font-family: $font-montserrat;
+      line-height: 27px;
+      letter-spacing: 0.18px;
+      @media #{$max1199} {
+        font-size: 16px;
+      }
+    }
+    p {
+      margin-bottom: 15px;
+      letter-spacing: 0.16px;
+    }
+    a {
+      color: $color-primary;
+    }
+  }
+  .right-content {
+    min-height: 200px;
+    padding: 22px 38px;
+    border-radius: 0px 6px 6px 0px;
+    background: linear-gradient(138deg, #ffebc4 0%, #fec855 100%);
+    .shape {
+      text-align: center;
+    }
+  }
+}
+// progress model
+.progress-model {
+  font-family: $font-lato;
+  h3 {
+    line-height: 27px;
+    font-weight: 600;
+    color: $color-ebony-clay;
+    @media #{$max991} {
+      font-size: 16px;
+      line-height: 24px;
+    }
+    &.title {
+      margin-bottom: 24px;
+      padding-bottom: 24px;
+      border-bottom: 1px solid $color-border4;
+      @media #{$max991} {
+        margin-bottom: 20px;
+        padding-bottom: 20px;
+      }
+    }
+  }
+  h4 {
+    font-weight: 500;
+    line-height: 150%; /* 24px */
+    letter-spacing: 0.16px;
+    color: $color-ebony-clay;
+    @media #{$max991} {
+      font-size: 14px;
+    }
+  }
+  .modal-dialog {
+    max-width: 790px;
+    @media #{$max991} {
+      max-width: 600px;
+    }
+    .modal-content {
+      padding: 30px 30px 36px;
+      @include bd-radius(6px);
+      .close-model {
+        position: absolute;
+        right: 30px;
+        top: 20px;
+        cursor: pointer;
+        @media #{$max991} {
+          right: 15px;
+          top: 10px;
+        }
+      }
+      .modal-body {
+        max-width: 667px;
+        .items-wrap {
+          margin-bottom: 16px;
+          @include d-flex;
+          gap: 45px;
+          @media #{$max991} {
+            gap: 30px;
+          }
+          .left {
+            width: 150px;
+          }
+          .right {
+            width: calc(100% - 195px);
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,172 @@
+.ic-btn {
+    height: 44px;
+    padding: 0px 16px;
+    @include align-center;
+    @include bd-radius(5px);
+    font-size: 16px;
+    background: $color-primary;
+    @include transition(0.8s);
+    color: $color-white;
+    position: relative;
+    z-index: 1;
+    line-height: unset;
+    font-family: $font-montserrat;
+    font-weight: 500;
+
+    @media #{$max767} {
+        height: 40px;
+        padding: 0px 12px;
+        font-size: 14px;
+    }
+
+    &:hover {
+        background-color: $color-primary;
+        color: $color-white;
+    }
+}
+
+button {
+    &:focus {
+        outline: none;
+        box-shadow: none;
+    }
+}
+
+.ic-shop-btn {
+    @extend .ic-btn;
+    height: 36px;
+    color: $color-white;
+    padding: 0 20px;
+
+    &:hover {
+        color: $color-white;
+    }
+}
+
+.ic-cart-btn {
+    @extend .ic-btn;
+    height: 44px;
+    padding: 0 15px;
+    @include bd-radius(100px);
+    filter: drop-shadow(0px 1px 2px rgba(16, 24, 40, 0.05));
+    background-color: #fff;
+    color: $color-shuttle-gray;
+    border: 1px solid #ddd;
+
+    @media #{$max1199} {
+        font-size: 14px;
+    }
+
+    &:hover {
+        background-color: $color-primary;
+        border: 1px solid $color-primary;
+        color: $color-white;
+    }
+}
+
+.ic-cart {
+    @extend .ic-btn;
+    height: 44px;
+    padding: 0 15px;
+    @include bd-radius(100px);
+    color: $color-white;
+
+    &:hover {
+        background-color: $color-primary;
+        color: $color-white;
+    }
+}
+
+.ic-btn-color-white {
+    @extend .ic-btn;
+    height: 48px;
+    padding: 0 20px;
+    color: $color-primary;
+    background-color: #fff;
+
+    &:hover {
+        color: $color-primary;
+    }
+}
+
+.ic-btn-outline {
+    height: 48px;
+    border: 2px solid $color-primary;
+    filter: drop-shadow(0px 1px 2px rgba(16, 24, 40, 0.05));
+    @include bd-radius(8px);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    color: $color-ebony-clay;
+    padding: 0 28px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    @include transition-linear(0.3s);
+
+    &:hover {
+        background-color: $color-primary;
+        color: $color-white;
+    }
+}
+
+// action btn
+.ic-action-btn {
+    border: 1px solid $color-border;
+    border-radius: 8px;
+    padding: 4px 10px;
+    background-color: transparent;
+}
+
+// boost btn
+
+.ic-boost-btn {
+    display: block;
+    padding: 4px 14px;
+    background: rgba(0, 174, 182, 0.1);
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    border-radius: 50px;
+    color: #00AEB6;
+    font-weight: 600;
+    -webkit-transition: all 0.1s linear;
+    -moz-transition: all 0.1s linear;
+    -o-transition: all 0.1s linear;
+    transition: all 0.1s linear;
+    padding: 0px 15px;
+    font-size: 12px;
+    white-space: nowrap;
+
+    &:hover {
+        background: #00AEB6;
+        color: #fff;
+    }
+}
+
+.ic-fill-btn {
+    background-color: $color-primary;
+    padding: 10px 30px;
+    border-radius: 4px;
+    font-weight: 600;
+    width: 100%;
+    color: white;
+}
+
+// submit btn outline hover fill
+
+.ic-submit-btn {
+    background: transparent;
+    color: $color-primary;
+    border: 1px solid $color-primary;
+    padding: 8px 20px;
+    border-radius: 50px;
+    font-weight: 600;
+    font-family: $font-lato;
+
+    &:hover {
+        background-color: $color-primary;
+        color: white;
+        @include transition(0.4s)
+        
+    }
+}

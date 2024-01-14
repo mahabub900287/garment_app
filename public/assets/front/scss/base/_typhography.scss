@@ -1,0 +1,63 @@
+/**Font Size & Font Family**/
+
+// ------------------
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0px;
+    font-family: $font-montserrat;
+}
+
+h1 {
+    font-size: 24px;
+    line-height: 150%;
+
+    span {
+        @extend h1;
+    }
+}
+
+h2 {
+    font-size: 20px;
+    line-height: 30px;
+
+    span {
+        @extend h2;
+    }
+
+}
+
+h3 {
+    font-size: 18px;
+    line-height: 130%;
+}
+
+h4 {
+    font-size: 16px;
+    line-height: 130%;
+}
+
+.body {
+    font-size: 16px;
+    line-height: 130%;
+    font-family: $font-lato;
+}
+
+.body-2 {
+    font-size: 14px;
+    line-height: 130%;
+}
+
+
+p,
+a,
+span,
+label,
+li {
+    font-size: 16px;
+    line-height: 150%;
+}

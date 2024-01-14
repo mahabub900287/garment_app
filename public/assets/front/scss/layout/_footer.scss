@@ -1,0 +1,223 @@
+.ic-footer-heads {
+    background-color: #171B2A;
+    padding-top: 60px;
+
+    @media #{$max767} {
+        padding-top: 34px;
+    }
+
+    .ic-newsletter {
+        padding-bottom: 42px;
+        border-bottom: 1px solid #4D4D4D;
+
+        .ic-news-content {
+            @media #{$max767} {
+                text-align: center;
+                padding: 0 20px 20px 20px;
+            }
+        }
+    }
+}
+
+.ic-forms-newsletter {
+    width: 425px;
+    @include bd-radius(100px);
+    background-color: #fff;
+    @include d-flex();
+    overflow: hidden;
+    flex-wrap: nowrap;
+    margin-left: auto;
+
+    @media (min-width: 767px) and (max-width: 991.98px) {
+        width: 100%;
+    }
+
+    @media #{$max767} {
+        margin-right: auto;
+    }
+
+    @media #{$max575} {
+        width: 100%;
+    }
+
+    input {
+        border: none;
+        padding-left: 20px;
+
+        &::placeholder {
+            color: $color-body;
+        }
+    }
+
+    button {
+        border-radius: 0px 100px 100px 0px;
+        height: 50px;
+        line-height: 50px;
+        text-align: center;
+        padding: 0 20px;
+        background-color: $color-primary;
+        font-weight: 600;
+        color: $color-white;
+
+    }
+}
+
+.social-media {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    li {
+        a {
+            display: block;
+            width: 30px;
+            height: 30px;
+            text-align: center;
+            line-height: 30px;
+            border: 1px solid $color-white;
+            color: $color-white;
+            @include bd-radius(50%);
+            @include transition(0.3s);
+
+            &:hover {
+                background-color: $color-primary;
+                border: 1px solid $color-primary;
+            }
+        }
+    }
+}
+
+.ic-main-footer-content {
+    padding-bottom: 60px;
+    @include d-flex();
+    gap: 111px;
+
+    @media #{$max1440} {
+        gap: 30px;
+    }
+
+    @media #{$max767} {
+        padding-bottom: 34px;
+    }
+
+    @media #{$max767} {
+        flex-direction: column;
+    }
+
+    .ic-footer-content-left {
+        width: 287px;
+        flex: 0 0 auto;
+
+        @media #{$max1440} {
+            width: 340px;
+
+            p {
+                font-size: 14px;
+            }
+        }
+
+        @media #{$max991} {
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        @media #{$max480} {
+            width: 100%;
+        }
+
+        .social-media {
+            @media #{$max991} {
+                justify-content: center;
+            }
+        }
+    }
+
+    .ic-footer-content-right {
+        flex: 1;
+        @include d-flex();
+        gap: 57px;
+
+        @media #{$max1399} {
+            gap: 20px;
+        }
+
+        .ic-footer-items {
+            width: calc(100% / 5 - 57px + 57px / 5);
+
+            @media #{$max1399} {
+                width: calc(100% / 4 - 20px + 20px / 4);
+            }
+
+            @media #{$max991} {
+                width: calc(100% / 2 - 20px + 20px / 2);
+            }
+
+            @media #{$max767} {
+                text-align: center;
+            }
+
+            @media #{$max575} {
+                width: calc(100% / 1 - 20px + 20px / 1);
+            }
+
+            h3 {
+                padding-bottom: 20px;
+                font-family: $font-montserrat;
+
+                @media #{$max1440} {
+                    font-weight: 600;
+                    font-size: 15px;
+                }
+            }
+
+            ul {
+                li {
+                    a {
+                        color: $color-gray2;
+                        font-family: $font-lato;
+                        font-weight: 400;
+                        @include transition(0.3s);
+
+                        @media #{$max1440} {
+                            font-size: 14px;
+                        }
+
+                        &:hover {
+                            color: $color-primary;
+                        }
+                    }
+
+                    &:not(:last-child) {
+                        padding-bottom: 10px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.ic-copyright {
+    background-color: $color-gray;
+    padding: 16px 0;
+}
+
+.back-to-top {
+    width: 50px;
+    height: 50px;
+    @include bd-radius(50%);
+    background-color: $color-primary;
+    line-height: 50px;
+    text-align: center;
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+
+    @media #{$max991} {
+        display: none;
+    }
+
+    i {
+        font-size: 44px;
+        color: $color-white;
+    }
+}

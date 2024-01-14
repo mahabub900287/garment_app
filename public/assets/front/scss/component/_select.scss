@@ -1,0 +1,29 @@
+.ic-select {
+    width: 100%;
+    height: 46px;
+    @include bd-radius(100px);
+    background-color: $color-white;
+    padding: 6px 20px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M11.9997 13.1714L16.9495 8.22168L18.3637 9.63589L11.9997 15.9999L5.63574 9.63589L7.04996 8.22168L11.9997 13.1714Z' fill='rgba(102,112,133,1)'%3E%3C/path%3E%3C/svg%3E");
+    background-position-x: 96%;
+    background-position-y: 14px;
+    background-size: 21px;
+    background-repeat: no-repeat;
+    background-color: #fff;
+    border: 0;
+    color: #555555;
+
+    &.black {
+        background-color: #242B33;
+        color: $color-white;
+    }
+
+    &:focus {
+        outline: 0;
+    }
+}

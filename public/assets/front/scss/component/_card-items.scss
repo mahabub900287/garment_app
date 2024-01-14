@@ -1,0 +1,409 @@
+/* coupon grid card */
+
+.ic-grid-card {
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    border: 1px solid #F0F0F0;
+    background: #fff;
+    position: relative;
+    min-height: 267px;
+    box-shadow: 0 4px 16px 0 rgba(0, 0, 0, 0.06);
+
+
+    h4 {
+        font-weight: 600;
+    }
+
+    .mb-12 {
+        @media #{$max575} {
+            margin-bottom: 4px;
+        }
+    }
+
+    .image {
+        position: relative;
+        width: 100%;
+        min-width: auto;
+        height: auto;
+        padding-bottom: 60%;
+        border-right: none;
+        border-bottom: 1px solid rgba(112, 112, 112, .17);
+        border-radius: 4px 4px 0 0;
+
+        @media #{$max575} {
+            padding-bottom: 66%;
+        }
+
+        img {
+            max-height: 100%;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            padding: 15px;
+            transform: translate(-50%, -50%);
+            z-index: 1;
+            max-width: 100%;
+            border-radius: 4px 4px 0 0;
+        }
+    }
+
+    .ic-card-content {
+        color: #242b33;
+        padding: 20px 15px;
+    }
+
+    .ic-date {
+        display: inline-flex;
+        gap: 6px;
+
+        i {
+            color: $color-primary;
+            font-size: 15px;
+
+            @media #{$max1399} {
+                margin-right: 2px;
+            }
+        }
+
+        .expires-time {
+            font-size: 13px;
+            font-weight: 500;
+            line-height: 23px;
+        }
+    }
+
+
+
+    .ic-btn {
+        width: 100%;
+        height: auto;
+        padding: 7px 16px;
+        font-size: 13px;
+    }
+}
+
+// .ic-list-view-card {
+//     flex-direction: row;
+//     min-height: 0px;
+//     padding: 20px 24px 24px 20px;
+
+//     -webkit-border-radius: 4px;
+//     -moz-border-radius: 4px;
+//     border-radius: 4px;
+//     border: 1px solid #F0F0F0;
+//     background: #fff;
+//     position: relative;
+//     min-height: 267px;
+//     box-shadow: 0 4px 16px 0 rgba(0, 0, 0, 0.06);
+
+//     position: relative;
+//     border: 1px solid #F0F0F0;
+//     border-radius: 6px;
+//     margin-bottom: 16px;
+//     background-color: #fff;
+
+// }
+
+.ic-list-view-card {
+    padding: 20px 20px 6px 20px;
+    background: #fff;
+    position: relative;
+    box-shadow: 0 4px 16px 0 rgba(0, 0, 0, 0.06);
+    border-radius: 6px;
+    margin-bottom: 16px;
+
+    @media #{$max991} {
+        padding: 10px;
+    }
+
+    @media #{$max767} {
+        padding: 6px;
+    }
+
+    .ic-card-top {
+        @include d-flex();
+        @include justify-content(space-between);
+        @include align-items(end);
+
+
+        @media #{$max767} {
+            flex-direction: column;
+            @include align-items(start);
+            gap: 10px;
+
+        }
+
+        @media #{$max480} {
+            flex-direction: column;
+            gap: 0px;
+        }
+
+    }
+
+    .ic-card-top-content {
+        @include d-flex();
+        @include align-items(center);
+        gap: 28px;
+        flex-direction: row;
+
+        @media #{$max1199} {
+            gap: 12px;
+        }
+
+        @media #{$max480} {
+            flex-direction: column;
+        }
+
+
+    }
+
+    .list-image {
+        width: 180px;
+        height: auto;
+        flex: 0 0 auto;
+
+        @media #{$max991} {
+            width: 150px;
+        }
+
+        @media #{$max767} {
+            width: 90px;
+            @include d-flex();
+            align-items: center;
+        }
+
+        @media #{$max480} {
+            width: 100%;
+        }
+
+        img {
+            border-radius: 4px;
+            height: 100%;
+            object-fit: cover;
+
+            @media #{$max480} {
+                height: 118px;
+                width: 100%;
+            }
+        }
+
+    }
+
+    .ic-coupon-text-area {
+        padding: 0;
+    }
+
+    .ic-coupon-text {
+
+        h2 {
+            font-size: 24px;
+            margin-bottom: 8px;
+            line-height: normal;
+            // -webkit-line-clamp: 1;
+            margin-bottom: 10px;
+            font-weight: 600;
+            display: -webkit-box;
+            -webkit-line-clamp: 2;
+            -webkit-box-orient: vertical;
+            overflow: visible;
+            text-overflow: ellipsis;
+
+            @media #{$max1199} {
+                font-size: 16px;
+                line-height: normal;
+            }
+
+            @media #{$max991} {
+                margin-bottom: 2px;
+            }
+
+            @media #{$max767} {
+                margin-bottom: 0px;
+                font-size: 14px;
+            }
+
+        }
+
+        p {
+            // &:nth-child(3) {
+            //     @media #{$max767} {
+            //         margin-bottom: 6px;
+            //         font-size: 14px;
+            //     }
+            // }
+
+            // margin-bottom: 16px;
+
+            // @media #{$max767} {
+            //     margin-bottom: 6px;
+            // }
+        }
+
+        .code {
+            font-weight: 600;
+            font-family: $font-montserrat;
+            margin-bottom: 10px;
+
+            @media #{$max991} {
+                font-size: 12px;
+                margin-bottom: 2px;
+            }
+
+            @media #{$max767} {
+                margin-bottom: 0;
+            }
+        }
+
+        .mb-16 {
+            @media #{$max991} {
+                margin-bottom: 4px;
+                font-size: 12px;
+            }
+
+            @media #{$max767} {
+                margin-bottom: 0px;
+                font-size: 12px;
+            }
+
+        }
+
+
+    }
+
+    .ic-btn-area {
+        padding-bottom: 10px;
+
+        @media #{$max767} {
+            padding: 0px;
+            max-width: 80px;
+        }
+
+        @media #{$max480} {
+            max-width: 100%;
+        }
+    }
+
+    .ic-btn {
+        height: 50px;
+        padding: 0px 72px;
+        font-size: 18px;
+        white-space: nowrap;
+
+        @media #{$max1199} {
+            padding: 0px 40px;
+
+        }
+
+        @media #{$max991} {
+            height: auto;
+            padding: 4px 12px;
+            font-size: 12px;
+            font-weight: 500;
+
+        }
+
+        @media #{$max767} {
+            justify-content: center;
+            height: 25px;
+            font-size: 12px;
+            margin-bottom: 0;
+        }
+    }
+
+    .ic-btn-shape {
+        top: 4px;
+        position: absolute;
+        width: 0;
+        height: 0;
+        right: 0;
+        border-top: 12px solid transparent;
+        border-right: 16px solid #10D3DC;
+        border-bottom: 12px solid transparent;
+        z-index: 9;
+
+        @media #{$max991} {
+            border-top: 8px solid transparent;
+            border-right: 10px solid #10D3DC;
+            border-bottom: 8px solid transparent;
+        }
+    }
+
+    .ic-card-bookmark {
+        position: absolute;
+        top: 10px;
+        right: 20px;
+        height: 35px;
+        width: 35px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50px;
+        color: #00AEB6;
+        cursor: pointer;
+        z-index: 999;
+        border: 1px solid #00AEB6;
+
+        @media #{$max991} {
+            right: 10px;
+        }
+    }
+
+    .ic-collapse-btn {
+        background: transparent;
+
+        i {
+            font-size: 20px;
+        }
+
+        &.collapsed {
+            .ic-minus-btn {
+                display: none;
+            }
+        }
+
+        &:not(.collapsed) {
+            .ic-add-btn {
+                display: none;
+            }
+        }
+    }
+
+    .ic-card-bottom {
+        border-top: 1px solid $color-border3;
+
+
+    }
+
+    .ic-expires-time {
+        @include d-flex();
+        @include align-items(center);
+        gap: 5px;
+        margin-bottom: 3px;
+
+        span {
+
+            @media #{$max991} {
+                font-size: 12px;
+            }
+
+            &:first-child {
+                color: $color-primary;
+                margin-top: 3px;
+            }
+        }
+    }
+
+    .ic-btn-box {
+        @include d-flex();
+        @include justify-content(end);
+
+        @media #{$max767} {
+            @include justify-content(start);
+            padding-top: 5px;
+        }
+
+
+
+    }
+}

@@ -1,0 +1,36 @@
+.accordion {
+    .ic-accordion-item {
+        border: 1px solid $color-border3;
+        @include bd-radius(6px);
+
+        &:not(:last-child) {
+            margin-bottom: 24px;
+        }
+
+        .accordion-button {
+            font-family: $font-montserrat;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: normal;
+            @include bd-radius(6px);
+            background-color: transparent;
+            @include transition(0.3s);
+
+            &:focus {
+                box-shadow: none;
+            }
+
+            &:not(.collapsed) {
+                background-color: transparent;
+                box-shadow: none;
+                padding-bottom: 0;
+                color: $color-primary;
+            }
+        }
+
+
+
+    }
+
+}

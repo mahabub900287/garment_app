@@ -1,0 +1,34 @@
+// submit-coupon-form //
+.submit-coupon-form {
+
+
+    .form-label {
+        font-weight: 500;
+    }
+
+    h2 {
+        font-weight: 600;
+        color: $color-primary;
+        border-bottom: 1px solid $color-border;
+        padding-bottom: 18px;
+        margin-top: 14px;
+    }
+
+    .footer-content {
+        p {
+            font-weight: 500;
+            color: $color-body;
+            font-family: $font-lato;
+        }
+    }
+
+    .form-btn {
+        @include d-flex();
+        justify-content: end;
+        gap: 16px;
+    }
+
+    .ic-btn{
+        font-weight: 600;
+    }
+}
